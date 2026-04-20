@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit 2 Construction Design Notes</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+      margin: 0;
+      background: #ffffff;
+      color: #111111;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 22px 60px;
+    }
+    h1, h2, h3 {
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.2rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      border-bottom: 2px solid #d9d9d9;
+      padding-bottom: 0.35rem;
+    }
+    h3 {
+      margin-top: 1.25rem;
+    }
+    .tagline {
+      margin-top: 0;
+      color: #444;
+    }
+    .box {
+      border: 1px solid #d9d9d9;
+      padding: 14px 16px;
+      margin: 14px 0;
+      background: #fafafa;
+    }
+    .search {
+      font-weight: bold;
+      background: #fff7cc;
+      padding: 2px 5px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    ul {
+      margin-top: 0.4rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+    }
+    .small {
+      font-size: 0.95rem;
+      color: #333;
+    }
+    code {
+      background: #f2f2f2;
+      padding: 2px 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>UNIT 2 – CONSTRUCTION DESIGN</h1>
+    <p class="tagline">Low-control research notes arranged for fast searching in the exam.</p>
+
+    <div class="box">
+      <strong>How to use this page:</strong>
+      <ul>
+        <li>Use <span class="search">Ctrl + F</span> and search words like <span class="search">foundations</span>, <span class="search">cost</span>, <span class="search">accessibility</span>, <span class="search">planning</span>, <span class="search">SIPs</span>, <span class="search">superstructure</span>.</li>
+        <li>Keep answers in the structure: <strong>What</strong> the issue is, <strong>Why</strong> it matters, <strong>How</strong> it affects design.</li>
+        <li>Always link decisions back to <strong>function</strong>, <strong>safety</strong>, <strong>compliance</strong>, <strong>cost</strong>, <strong>time</strong>, <strong>sustainability</strong>, and <strong>inclusion</strong>.</li>
+      </ul>
+    </div>
+
+    <h2>PART A – CORE LEGISLATION / KEYWORDS</h2>
+    <div class="grid">
+      <div class="box">
+        <h3>Legal / Regulatory</h3>
+        <ul>
+          <li><span class="search">Building Regulations</span></li>
+          <li><span class="search">Building Safety Act 2022</span> / relevant current building safety requirements</li>
+          <li><span class="search">Part M</span> – access to and use of buildings</li>
+          <li><span class="search">Planning policy</span></li>
+          <li><span class="search">Party Wall</span> considerations</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Health, Safety, Inclusion</h3>
+        <ul>
+          <li><span class="search">HASAWA 1974</span></li>
+          <li><span class="search">CDM Regulations</span></li>
+          <li><span class="search">Equality Act</span></li>
+          <li><span class="search">Inclusive design</span></li>
+          <li><span class="search">Accessibility</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box small">
+      <strong>Trigger reminder:</strong> whenever discussing layout, circulation, doors, corridors, parking, toilets, entrances, ramps or user experience, link back to <span class="search">Part M</span>, <span class="search">equality</span>, and <span class="search">inclusive design</span>.
+    </div>
+
+    <h2>ACTIVITY 1 – DESIGN FACTORS / CONSTRAINTS</h2>
+
+    <h3>What / Why / How</h3>
+    <div class="box">
+      <ul>
+        <li><strong>What:</strong> identify the factor or constraint.</li>
+        <li><strong>Why:</strong> explain why it matters to the client, user, site or design.</li>
+        <li><strong>How:</strong> explain how it changes layout, specification, structure, programme or cost.</li>
+      </ul>
+    </div>
+
+    <div class="grid">
+      <div class="box">
+        <h3>Design Factors</h3>
+        <ul>
+          <li><span class="search">Building use</span> – purpose of the building drives room sizes, layout, services and circulation.</li>
+          <li><span class="search">Spatial requirements</span> – size of rooms, number of spaces, adjacencies, circulation space.</li>
+          <li><span class="search">Future flexibility</span> – can spaces be adapted, expanded or divided later?</li>
+          <li><span class="search">Sustainability</span> – low-carbon materials, insulation, renewables, water use, EPC.</li>
+          <li><span class="search">Accessibility</span> – inclusive access, Part M, ease of movement for all users.</li>
+          <li><span class="search">Sympathetic design</span> – fit with surrounding buildings, local character, modern vs traditional.</li>
+          <li><span class="search">MMC</span> – modular, off-site manufacture, prefab, SIPs, precast.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Timeframe</h3>
+        <ul>
+          <li><span class="search">Programme of Works</span> – planned sequence of tasks with start and finish dates.</li>
+          <li><span class="search">Acceleration works</span> may be needed if deadlines are tight.</li>
+          <li>Critical activities affect overall completion.</li>
+          <li>Delays may lead to <span class="search">liquidated damages</span>.</li>
+          <li>Prefabrication / modular can reduce on-site time.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Deliveries / Logistics / Storage</h3>
+        <ul>
+          <li><span class="search">Pre-fab</span> reduces number of deliveries and need for on-site storage.</li>
+          <li><span class="search">JIT deliveries</span> help where space is limited.</li>
+          <li>Restricted delivery times may apply on urban or school sites.</li>
+          <li>Bulk buying may save cost but increases storage need.</li>
+          <li>Poor access can affect plant, deliveries and sequencing.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Cost</h3>
+        <ul>
+          <li><span class="search">BoQs</span> and QS input help control cost.</li>
+          <li><span class="search">Contingency</span> should be allowed for unknowns.</li>
+          <li>Pre-fab can reduce labour time and human error.</li>
+          <li>Higher spec and better quality usually increase cost.</li>
+          <li>Budget can limit finishes, systems and complexity.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Ground Conditions</h3>
+        <ul>
+          <li>Ground investigation needed before final design.</li>
+          <li><span class="search">Water table</span>, contamination, chemicals and made ground all affect foundations.</li>
+          <li>Bad ground can mean excavation to formation level, piling, more time and more money.</li>
+          <li>Existing underground services must be identified before handover and design finalisation.</li>
+          <li>Piling may reduce need for deep mass excavation but increases specialist cost.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Site / Planning Constraints</h3>
+        <ul>
+          <li><span class="search">Site size</span>, shape, orientation, trees, neighbouring buildings, access roads.</li>
+          <li><span class="search">Conservation area</span> or <span class="search">listed building</span> status affects appearance and materials.</li>
+          <li><span class="search">Planning policies</span> may cover height, overlooking, privacy, parking and massing.</li>
+          <li><span class="search">Flood risk</span> may influence levels, drainage and planning approval.</li>
+          <li><span class="search">Party wall</span> issues may arise if close to adjoining properties.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>ACTIVITY 2 – SPATIAL REQUIREMENTS</h2>
+
+    <div class="grid">
+      <div class="box">
+        <h3>Room Sizes / Layout</h3>
+        <ul>
+          <li>Explain the size of specified rooms and why they are suitable.</li>
+          <li>Consider adjacency of spaces and flow through the building.</li>
+          <li>Allow enough circulation for users, furniture, equipment and maintenance.</li>
+          <li>Think about whether spaces can be extended or subdivided later.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Lighting / Noise</h3>
+        <ul>
+          <li>Maximise natural light where beneficial.</li>
+          <li>Avoid glare, especially on west-facing elevations.</li>
+          <li>Use rooflights where useful.</li>
+          <li>Consider noise from roads, plant, service rooms and adjacent spaces.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Building Regulations / Access</h3>
+        <ul>
+          <li><span class="search">Part M</span> – doors, corridors, turning circles, entrances, toilets and parking.</li>
+          <li>Ensure the building is usable by all.</li>
+          <li>Allow clear circulation space and easy navigation.</li>
+          <li>Accessibility should be built in, not added later.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Parking / External Areas</h3>
+        <ul>
+          <li>Car park size must suit building use and likely occupancy.</li>
+          <li>Include accessible parking and safe pedestrian routes.</li>
+          <li>Consider turning areas, drop-off zones and service access.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Desired Outcomes</h3>
+    <div class="grid">
+      <div class="box">
+        <ul>
+          <li><span class="search">Sustainability</span> – materials, methods, insulation, CO2 reduction, renewable energy, EPC, water use.</li>
+          <li><span class="search">Aesthetic</span> – sympathetic, modern, traditional, context-led.</li>
+          <li><span class="search">Accessibility</span> – inclusive design, community benefit.</li>
+          <li><span class="search">Futureproofing</span> – flexible use, long-term adaptability.</li>
+          <li><span class="search">ROI</span> – client value, life-cycle benefit, maintenance considerations.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Methods of Construction</h3>
+        <ul>
+          <li><span class="search">Off-site construction</span> / <span class="search">prefab</span></li>
+          <li><span class="search">Modular</span></li>
+          <li><span class="search">SIPs</span></li>
+          <li><span class="search">Precast</span></li>
+          <li><span class="search">Brick and block</span></li>
+        </ul>
+        <p class="small">Always justify by time, cost, sustainability, quality control, logistics and site constraints.</p>
+      </div>
+    </div>
+
+    <h3>Site Information</h3>
+    <div class="box">
+      <ul>
+        <li><span class="search">Deliveries</span> / restricted access / restricted times / orientation.</li>
+        <li><span class="search">Brownfield</span> or <span class="search">greenfield</span>.</li>
+        <li>Availability of existing services.</li>
+        <li>Ground investigation and water conditions.</li>
+        <li>Likely foundation solutions.</li>
+      </ul>
+    </div>
+
+    <h3>Budget Requirements</h3>
+    <div class="box">
+      <ul>
+        <li><span class="search">Contingency</span> – around 10% can be allowed for risk/unknowns.</li>
+        <li><span class="search">Preliminaries</span> – around 5% depending on project.</li>
+        <li>Allow for extras such as <span class="search">solar</span> if included.</li>
+        <li>Use <span class="search">cost per m²</span> for early estimates.</li>
+        <li>Use <span class="search">SPONS</span>, <span class="search">BoQs</span> and QS input.</li>
+        <li>Early completion bonus may be offered to contractor.</li>
+      </ul>
+    </div>
+
+    <h2>ACTIVITY 3 – POSSIBLE BUILDING SIZE / FORM / STRUCTURE</h2>
+
+    <div class="grid">
+      <div class="box">
+        <h3>Building Size / Form</h3>
+        <ul>
+          <li>Expand from Activity 2 spatial requirements.</li>
+          <li>Check floor-to-ceiling heights are suitable for building use.</li>
+          <li>South-facing elevations can improve daylight and passive solar gain.</li>
+          <li>Service rooms can be placed to the north where less daylight is needed.</li>
+          <li>Consider fire exits and safe escape routes.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Roof Design</h3>
+        <ul>
+          <li><span class="search">Flat sedum roof</span> with planted substrate over waterproof membrane.</li>
+          <li>Benefits: biodiversity, extra insulation, visual quality, rainwater attenuation.</li>
+          <li>Need slight falls for drainage and good waterproofing detail.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Foundations</h3>
+        <ul>
+          <li><span class="search">Pad foundations</span> – common under columns or point loads where ground is suitable.</li>
+          <li><span class="search">Raft foundations</span> – spread load over a larger area; useful on weaker ground.</li>
+          <li><span class="search">Piled foundations</span> – transfer load deeper where near-surface ground is poor.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Superstructure</h3>
+        <ul>
+          <li>Brick and block</li>
+          <li>SIPs on block</li>
+          <li>Steel frame with cladding / SIPs / Trespa</li>
+          <li>Concrete frame</li>
+          <li>Glass façade / panels / curtain walling</li>
+          <li>Modular off-site systems</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Justify Foundation and Superstructure</h3>
+    <div class="box">
+      <p><strong>Use this structure every time:</strong></p>
+      <ul>
+        <li><span class="search">Suitability for ground conditions</span></li>
+        <li><span class="search">Fit for purpose</span> for building type and loads</li>
+        <li><span class="search">Timeframe</span> and speed of construction</li>
+        <li><span class="search">Cost</span> and budget impact</li>
+        <li><span class="search">Sustainability</span></li>
+        <li><span class="search">Storage / delivery needs</span></li>
+        <li><span class="search">Noise</span> and disruption during construction</li>
+        <li><span class="search">Visual impact</span> and finish</li>
+        <li><span class="search">Maintenance</span> and durability</li>
+      </ul>
+    </div>
+
+    <h3>Material / System Prompts</h3>
+    <div class="grid">
+      <div class="box">
+        <h3>SIPs</h3>
+        <ul>
+          <li>Can be used for internal and external walls, roofs and sometimes separating walls depending on system/build-up.</li>
+          <li>Fast to erect, good thermal performance, less waste, modern method.</li>
+          <li>Needs careful detailing for moisture, fire and airtightness.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Brick and Block</h3>
+        <ul>
+          <li>Traditional, familiar, robust.</li>
+          <li>Can be finished with render, brick slips or cladding.</li>
+          <li>Usually slower than off-site systems.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Steel Frame</h3>
+        <ul>
+          <li>Fast erection, strong, suited to larger spans and flexible layouts.</li>
+          <li>Often needs fire protection and external finishing systems.</li>
+          <li>Can reduce on-site programme.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Concrete Frame</h3>
+        <ul>
+          <li><span class="search">In situ concrete</span> is durable, fire resistant, high compressive strength, high acoustic mass and low maintenance.</li>
+          <li>Suitable for medium to high-rise buildings.</li>
+          <li>Can be quick with modern methods but often needs finishes/cladding.</li>
+          <li>Higher embodied carbon than some alternatives.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Modular</h3>
+        <ul>
+          <li>Made off-site, fast installation, less waste, fewer deliveries.</li>
+          <li>Good where site access and programme are tight.</li>
+          <li>Transport and crane access must be considered.</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Glass Façade / Curtain Walling</h3>
+        <ul>
+          <li>Strong visual impact and daylight benefit.</li>
+          <li>Can increase glare, solar gain and cost if not carefully designed.</li>
+          <li>Needs good thermal performance and maintenance planning.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>QUICK SEARCH WORDS</h2>
+    <div class="box">
+      <p>
+        <span class="search">accessibility</span> |
+        <span class="search">Part M</span> |
+        <span class="search">inclusive design</span> |
+        <span class="search">cost</span> |
+        <span class="search">BoQs</span> |
+        <span class="search">contingency</span> |
+        <span class="search">ground conditions</span> |
+        <span class="search">foundations</span> |
+        <span class="search">pad foundations</span> |
+        <span class="search">raft foundations</span> |
+        <span class="search">piled foundations</span> |
+        <span class="search">superstructure</span> |
+        <span class="search">SIPs</span> |
+        <span class="search">modular</span> |
+        <span class="search">planning</span> |
+        <span class="search">listed building</span> |
+        <span class="search">conservation area</span> |
+        <span class="search">deliveries</span> |
+        <span class="search">JIT deliveries</span> |
+        <span class="search">sustainability</span> |
+        <span class="search">roof</span> |
+        <span class="search">sedum roof</span> |
+        <span class="search">future flexibility</span> |
+        <span class="search">ROI</span>
+      </p>
+    </div>
+
+    <div class="box small">
+      <strong>Exam reminder:</strong> in low control, research facts and examples. In medium control, turn them into concise points that answer the scenario directly. Do not just list facts — always apply them to the building, site and client brief.
+    </div>
+  </div>
+</body>
+</html>
