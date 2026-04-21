@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Unit 2 Construction Design – 2 Page Memory Sheet</title>
+<style>
+  :root{
+    --bg:#f6f7f9;
+    --paper:#ffffff;
+    --ink:#1f2937;
+    --muted:#6b7280;
+    --line:#d1d5db;
+    --accent:#111827;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.35;
+  }
+  .wrap{
+    max-width:1200px;
+    margin:24px auto;
+    padding:0 16px 32px;
+  }
+  .topnote{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:16px 18px;
+    margin-bottom:16px;
+  }
+  h1{
+    margin:0 0 6px;
+    font-size:28px;
+  }
+  .sub{
+    color:var(--muted);
+    font-size:14px;
+    margin:0;
+  }
+  .pages{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+  }
+  .page{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:18px;
+    min-height:1450px;
+    box-shadow:0 1px 2px rgba(0,0,0,.04);
+  }
+  .page h2{
+    margin:0 0 10px;
+    font-size:22px;
+    border-bottom:2px solid var(--accent);
+    padding-bottom:6px;
+  }
+  .strip{
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:10px 12px;
+    margin-bottom:14px;
+    background:#fafafa;
+    font-size:14px;
+  }
+  .columns{
+    display:grid;
+    grid-template-columns:3fr 2fr;
+    gap:14px;
+  }
+  .box{
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px;
+    margin-bottom:12px;
+    break-inside:avoid;
+  }
+  .box h3{
+    margin:0 0 8px;
+    font-size:16px;
+  }
+  ul{
+    margin:0;
+    padding-left:18px;
+  }
+  li{ margin:3px 0; }
+  .small{ font-size:13px; }
+  .tight li{ margin:2px 0; }
+  .grid4{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+  .footerline{
+    margin-top:12px;
+    border-top:2px dashed var(--line);
+    padding-top:10px;
+    font-weight:bold;
+    letter-spacing:.3px;
+  }
+  .tag{
+    display:inline-block;
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:3px 8px;
+    margin:2px 4px 0 0;
+    font-size:12px;
+    background:#fafafa;
+  }
+  @media print{
+    body{ background:white; }
+    .wrap{ max-width:none; margin:0; padding:0; }
+    .topnote{ border:none; border-radius:0; margin:0 0 8px; padding:0 0 8px; }
+    .pages{ gap:10px; }
+    .page{
+      border:1px solid #999;
+      box-shadow:none;
+      border-radius:0;
+      min-height:auto;
+      page-break-inside:avoid;
+    }
+  }
+  @media (max-width: 900px){
+    .pages{ grid-template-columns:1fr; }
+    .page{ min-height:auto; }
+    .columns, .grid4{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topnote">
+      <h1>Unit 2 Construction Design – 2 Page Memory Sheet</h1>
+      <p class="sub">Built from your updated notes. Designed for fast scanning, recall, and printing.</p>
+    </div>
+
+    <div class="pages">
+      <section class="page">
+        <h2>Page 1 – Activity 1 + Core Thinking</h2>
+
+        <div class="strip">
+          <strong>D</strong> – What am I building? &nbsp; | &nbsp;
+          <strong>C</strong> – What’s stopping me? &nbsp; | &nbsp;
+          <strong>S</strong> – How does it work? &nbsp; | &nbsp;
+          <strong>S</strong> – How is it built?
+        </div>
+
+        <div class="columns">
+          <div>
+            <div class="box">
+              <h3>Design Factors</h3>
+              <ul class="tight small">
+                <li><strong>Use</strong> → layout, size, services</li>
+                <li><strong>Spatial</strong> → rooms, circulation, flexibility</li>
+                <li><strong>Sustainability</strong> → EPC, CO₂, renewables, water</li>
+                <li><strong>Access</strong> → Part M, inclusive design</li>
+                <li><strong>Aesthetic</strong> → planning, context, sympathetic design</li>
+                <li><strong>MMC</strong> → modular / SIPs / prefab = faster, less waste</li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <h3>Constraints</h3>
+              <ul class="tight small">
+                <li><strong>Time</strong> → PoW, sequencing, critical path → MMC speeds build</li>
+                <li><strong>Cost</strong> → BoQs, QS, contingency, prelims → affects spec / finishes / value engineering</li>
+                <li><strong>Ground</strong> → surveys, contamination, water → affects foundations / cost / time</li>
+                <li><strong>Site</strong> → size, shape, access, orientation → affects layout / buildability</li>
+                <li><strong>Planning</strong> → height, materials, conservation, privacy → redesign risk / delays</li>
+                <li><strong>Logistics</strong> → deliveries, storage, crane access → JIT / modular</li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <h3>Extra Factors</h3>
+              <ul class="tight small">
+                <li><strong>Acoustics</strong> → insulation / zoning / room positioning</li>
+                <li><strong>H&amp;S</strong> → CDM / HASAWA / site setup / safe access</li>
+                <li><strong>Environmental</strong> → TPOs / protected species / remediation</li>
+                <li><strong>Services</strong> → drainage / utilities / M&amp;E provision</li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <h3>Risk</h3>
+              <ul class="tight small">
+                <li><strong>Ground risk</strong> → delays / cost overruns</li>
+                <li><strong>Planning risk</strong> → refusal / redesign</li>
+                <li><strong>Programme risk</strong> → fines / liquidated damages</li>
+                <li><strong>Cost risk</strong> → inflation / changes / errors</li>
+                <li><strong>Mitigate</strong> → surveys / planning ahead / contingency / sequencing</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="box">
+              <h3>Comparison Language</h3>
+              <ul class="tight small">
+                <li><strong>Modular</strong> → best for time / logistics</li>
+                <li><strong>Steel</strong> → best for speed / open spans</li>
+                <li><strong>Concrete</strong> → best for fire / durability / acoustics</li>
+                <li><strong>Traditional</strong> → best for sympathetic aesthetics</li>
+              </ul>
+              <div class="footerline small">Use: better than / however / because</div>
+            </div>
+
+            <div class="box">
+              <h3>Quick Links</h3>
+              <div class="small">
+                <span class="tag">Buildability = access / labour / materials</span>
+                <span class="tag">Maintenance = durability / repairs</span>
+                <span class="tag">Services = heating / vent / drainage</span>
+                <span class="tag">Fire = escape / compartmentation / resistance</span>
+              </div>
+            </div>
+
+            <div class="box">
+              <h3>Useful Legislation / Guidance</h3>
+              <ul class="tight small">
+                <li>Building Safety Act / Building Regs / Approved Docs</li>
+                <li>Approved Doc B, M, L, E, C, A, K, 7</li>
+                <li>Equality Act / inclusive design</li>
+                <li>CDM Regs / HASAWA</li>
+                <li>Planning policy / conservation / party wall</li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <h3>Always Do in Answers</h3>
+              <ul class="tight small">
+                <li>Link point to scenario</li>
+                <li>Explain impact on design</li>
+                <li>Compare options where possible</li>
+                <li>Justify final choice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerline">LINK → IMPACT → JUSTIFY → COMPARE</div>
+      </section>
+
+      <section class="page">
+        <h2>Page 2 – Activity 2 + Activity 3</h2>
+
+        <div class="grid4">
+          <div class="box">
+            <h3>1. Spatial Requirements</h3>
+            <ul class="tight small">
+              <li>Room sizes / layout</li>
+              <li>Circulation: doors / corridors</li>
+              <li>Vertical: lifts / stairs</li>
+              <li>Fire strategy: escape routes</li>
+              <li>Light / ventilation / noise</li>
+              <li>Flexibility / future changes</li>
+              <li>Parking: car / EV / bike / service access</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>2. Desired Outcomes</h3>
+            <ul class="tight small">
+              <li>Sustainability: materials / energy / water</li>
+              <li>Aesthetic: modern / traditional / sympathetic</li>
+              <li>Accessibility / inclusion</li>
+              <li>User comfort: thermal / acoustic</li>
+              <li>Security</li>
+              <li>Futureproofing</li>
+              <li>ROI / value</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>3. Site Information</h3>
+            <ul class="tight small">
+              <li>Brownfield / greenfield</li>
+              <li>Ground conditions / levels / topography</li>
+              <li>Orientation / sunlight</li>
+              <li>Surrounding buildings / overlooking</li>
+              <li>Access / deliveries / storage</li>
+              <li>Existing services / contamination</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>4. Budget Requirements</h3>
+            <ul class="tight small">
+              <li>£/m² benchmark</li>
+              <li>BoQs / QS</li>
+              <li>10% contingency / 5% prelims</li>
+              <li>Lifecycle cost / maintenance</li>
+              <li>Extras: solar / EV / specialist finishes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Activity 3 – Size, Form, Construction</h3>
+          <div class="grid4">
+            <div>
+              <h4 style="margin:0 0 6px;font-size:14px;">Size</h4>
+              <ul class="tight small">
+                <li>Based on spatial requirements</li>
+                <li>Limited by site / planning / budget</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="margin:0 0 6px;font-size:14px;">Form</h4>
+              <ul class="tight small">
+                <li>Orientation for light / energy</li>
+                <li>Shape = function + context</li>
+                <li>Sympathetic to surroundings</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="margin:0 0 6px;font-size:14px;">Foundations</h4>
+              <ul class="tight small">
+                <li><strong>Pad</strong> → good ground / low loads</li>
+                <li><strong>Raft</strong> → weaker ground / spreads load</li>
+                <li><strong>Piled</strong> → poor ground / heavy loads</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="margin:0 0 6px;font-size:14px;">Superstructure</h4>
+              <ul class="tight small">
+                <li>Brick &amp; block</li>
+                <li>Steel frame</li>
+                <li>Concrete frame</li>
+                <li>SIPs</li>
+                <li>Modular</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid4">
+          <div class="box">
+            <h3>Roof</h3>
+            <ul class="tight small">
+              <li><strong>Flat / sedum</strong> → sustainable, insulation, biodiversity</li>
+              <li><strong>Pitched</strong> → traditional appearance</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Justification Framework</h3>
+            <ul class="tight small">
+              <li>Suitability</li>
+              <li>Cost</li>
+              <li>Time</li>
+              <li>Sustainability</li>
+              <li>Buildability</li>
+              <li>Aesthetic</li>
+              <li>Maintenance</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Buildability / Maintenance / Services</h3>
+            <ul class="tight small">
+              <li>Buildability → access / labour / material availability</li>
+              <li>Maintenance → durability / repairs / replacements</li>
+              <li>Services → heating / ventilation / drainage / M&amp;E / internet</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Material Triggers</h3>
+            <ul class="tight small">
+              <li><strong>SIPs</strong> → fast, insulated, low waste</li>
+              <li><strong>Steel</strong> → strong, fast, needs fire protection</li>
+              <li><strong>Concrete</strong> → durable, fire resistant, high carbon</li>
+              <li><strong>Modular</strong> → off-site, quick, fewer deliveries</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Fire</h3>
+          <ul class="tight small">
+            <li>Means of escape</li>
+            <li>Compartmentation</li>
+            <li>Fire resistance</li>
+            <li>Travel distance</li>
+          </ul>
+        </div>
+
+        <div class="footerline">LINK TO SCENARIO • EXPLAIN IMPACT • JUSTIFY CHOICES • COMPARE OPTIONS</div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
